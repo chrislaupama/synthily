@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Tone from 'tone'
-import Nexus from 'nexusui'
 import './App.css'
 
 class App extends Component {
@@ -14,18 +13,11 @@ class App extends Component {
       synth.triggerAttackRelease('C4', '8n')
     }
 
-    const piano = new Nexus.Piano('#piano',{
-      'size': [500,125],
-      'mode': 'button',  // 'button', 'toggle', or 'impulse'
-      'lowNote': 24,
-      'highNote': 60
-  })
-
     return (
       <div className='App'>
         <h1>Testing</h1>
         <button onClick={playSynth}>Play Synth</button>
-        <canvas data-nx="piano"></canvas>
+        <canvas id='dial' data-nx='dial'></canvas>
       </div>
     )
   }
