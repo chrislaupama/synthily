@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import Tone from 'tone'
+
+import Button from '@material-ui/core/Button'
+
 import './App.css'
 
 class App extends Component {
@@ -22,9 +25,12 @@ class App extends Component {
         <h1>Press a key</h1>
         {this.state.keys.map(keys => {
           return (
-            <button onClick={playSynth} name={keys}>
+            <Button
+              variant='contained'
+              onClick={playSynth}
+              name={keys}>
               {keys}
-            </button>
+            </Button>
           )
         })}
       </div>
