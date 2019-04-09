@@ -7,7 +7,7 @@ import './App.css'
 
 class App extends Component {
   state = {
-    keys: ['C4', 'D4', 'E4', 'F4', 'G4', 'A4', 'B4']
+    keys: ['C4', 'D4', 'E4', 'F4', 7'G4', 'A4', 'B4']
   }
 
   render() {
